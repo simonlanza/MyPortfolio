@@ -54,7 +54,7 @@ const Header = () => {
                         <li><button className="hover:text-pink-500 hover:scale-110 transition-transform" onClick={() => scrollToSection('home')}>Home</button></li>
                         <li><button className="hover:text-pink-500 hover:scale-110 transition-transform" onClick={() => scrollToSection('about')}>About</button></li>
                         <li><button className="hover:text-pink-500 hover:scale-110 transition-transform" onClick={() => scrollToSection('experience')}>Experience</button></li>
-                        <li><button className="hover:text-pink-500 hover:scale-110 transition-transform" onClick={() => scrollToSection('studies')}>Studies</button></li>
+                        <li><button className="hover:text-pink-500 hover:scale-110 transition-transform" onClick={() => scrollToSection('education')}>Education</button></li>
                         <li><button className="hover:text-pink-500 hover:scale-110 transition-transform" onClick={() => scrollToSection('blog')}>Blog</button></li>
                         <li><button className="hover:text-pink-500 hover:scale-110 transition-transform" onClick={() => scrollToSection('contact')}>Contact</button></li>
                     </ul>

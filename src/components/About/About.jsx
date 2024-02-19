@@ -10,7 +10,6 @@ import ShowChartIcon from '@mui/icons-material/ShowChart';
 import GestureIcon from '@mui/icons-material/Gesture';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import MyselfPhoto from '../../images/foto Simon LF.jpg';
-import BgBlue from '../../images/white-gray-bg.jpg'
 
 
 const About = () => {
@@ -28,6 +27,7 @@ const About = () => {
         triggerOnce: true,
         threshold: 0.22,
     });
+
     const [skillsRef, skillsInView] = useInView({
         triggerOnce: true,
         threshold: 0.22,
@@ -35,8 +35,8 @@ const About = () => {
 
     const headerProps = useSpring({
         opacity: headerInView ? 1 : 0,
-        transform: headerInView ? 'translateX(0)' : 'translateX(-200px)',
-        config: { duration: 420 },
+        transform: headerInView ? 'scale(1)' : 'scale(0.3)',
+        config: { duration: 520 },
     })
 
     const traitsProps = useSpring({
@@ -100,16 +100,11 @@ const About = () => {
     return (
         <div id='about'
             className=" w-screen flex flex-col justify-start text-slate-900 pt-5 z-1"
-            style={{
-                backgroundImage: `url(${BgBlue})`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-            }}>
-
+        >
             <animated.div ref={headerRef}
                 style={{ ...headerProps, zIndex: 1 }}
                 className="max-w-5xl mx-auto pt-14 mb-5">
-                <h2 className="text-4xl font-bold mb-4 border-b-2 border-pink-500">ABOUT ME</h2>
+                <h2 className="text-4xl font-bold mb-4 border-b border-pink-500">ABOUT ME</h2>
             </animated.div>
             <animated.div
                 ref={traitsRef}
