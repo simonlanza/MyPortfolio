@@ -43,14 +43,14 @@ const Experience = () => {
             <animated.div ref={headerRef} className="max-w-5xl mx-auto pt-14 mb-5" style={{ ...headerProps }}>
                 <h2 className="text-4xl font-bold border-b border-pink-500">Experience</h2>
             </animated.div>
-            <div className='flex flex-col md:flex-row p-6'>
-                <animated.div className='flex flex-col items-center text-center m-2'
+            <div className='flex flex-col md:flex-row p-6 justify-center'>
+                <animated.div className='flex flex-col items-center text-center m-2 max-w-3xl'
                     ref={lJobRef} style={{ ...lJobProps }} >
                     <h4 className='text-pink-500'>2020-2022</h4>
                     <h2 className='text-2xl m-2'> Freelance Web Developer </h2>
                     <p>From 2020 to 2022, I served as a Freelance Web Developer, specializing in creating and enhancing websites. Focused on small to medium-sized enterprises and startups, I applied a meticulous approach to deliver seamless, professional online solutions. This experience honed my technical skills and deepened my understanding of crafting effective web solutions tailored to diverse client needs.</p>
                 </animated.div>
-                <animated.div className='flex flex-col items-center text-center border-dotted border-t border-pink-500 md:border-none m-2'
+                <animated.div className='flex flex-col items-center text-center border-dotted border-t border-pink-500 md:border-none m-2 max-w-3xl'
                     ref={rJobRef} style={{ ...rJobProps }} >
                     <h4 className='text-pink-500'>2023</h4>
                     <h2 className='text-2xl m-2'> Sr App Support Engineer at <a className='text-indigo-600 hover:scale-120 transition-transform' href='https://dxc.com/us/en' target="_blank" rel="noopener noreferrer"> DXC</a></h2>
