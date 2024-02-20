@@ -38,7 +38,7 @@ const Experience = () => {
 
     return (
         <div id='experience'
-            className="w-screen flex flex-col text-slate-900 z-1 min-h-screen -mt-46"
+            className="w-screen flex flex-col text-slate-900 z-1 min-h-screen -mt-46 overflow-hidden"
         >
             <animated.div ref={headerRef} className="max-w-5xl mx-auto pt-14 mb-5" style={{ ...headerProps }}>
                 <h2 className="text-4xl font-bold border-b border-pink-500">Experience</h2>

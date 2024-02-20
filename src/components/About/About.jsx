@@ -99,7 +99,7 @@ const About = () => {
 
     return (
         <div id='about'
-            className=" w-screen flex flex-col justify-start text-slate-900 min-h-screen -mt-46 z-1"
+            className=" w-screen flex flex-col justify-start text-slate-900 min-h-screen -mt-46 z-1 overflow-hidden"
         >
             <animated.div ref={headerRef}
                 style={{ ...headerProps, zIndex: 1 }}
@@ -109,7 +109,7 @@ const About = () => {
             <animated.div
                 ref={traitsRef}
                 style={{ ...traitsProps, zIndex: 1 }}
-                className='flex flex-wrap justify-around'
+                className='flex flex-wrap justify-around overflow-hidden'
             >
                 {traits.map((trait, index) => (
                     <TraitCard key={index} {...trait} />
