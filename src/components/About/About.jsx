@@ -99,7 +99,7 @@ const About = () => {
 
     return (
         <div id='about'
-            className=" w-screen flex flex-col justify-start text-slate-900 pt-5 z-1"
+            className=" w-screen flex flex-col justify-start text-slate-900 min-h-screen -mt-46 z-1"
         >
             <animated.div ref={headerRef}
                 style={{ ...headerProps, zIndex: 1 }}

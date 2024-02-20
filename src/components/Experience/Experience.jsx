@@ -38,12 +38,12 @@ const Experience = () => {
 
     return (
         <div id='experience'
-            className="w-screen flex flex-col justify-start text-slate-900 pt-5 z-1"
+            className="w-screen flex flex-col text-slate-900 z-1 min-h-screen -mt-46"
         >
             <animated.div ref={headerRef} className="max-w-5xl mx-auto pt-14 mb-5" style={{ ...headerProps }}>
                 <h2 className="text-4xl font-bold border-b border-pink-500">Experience</h2>
             </animated.div>
-            <div className='flex flex-col md:flex-row p-6 justify-center'>
+            <div className='justify-center flex flex-col md:flex-row p-6 sm:pt-12 md:pt-24 lg:pt-32 	'>
                 <animated.div className='flex flex-col items-center text-center m-2 max-w-3xl'
                     ref={lJobRef} style={{ ...lJobProps }} >
                     <h4 className='text-pink-500'>2020-2022</h4>

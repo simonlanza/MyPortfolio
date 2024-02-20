@@ -7,4 +7,20 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  min-width: 100vw;
 }
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-slate-800 {
+  --tw-gradient-from: #1e293b var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(30 41 59 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-slate-600 {
+  --tw-gradient-to: #475569 var(--tw-gradient-to-position);
+}
+

@@ -40,7 +40,7 @@ const Education = () => {
         config: { duration: 1000}
     })
     return (
-        <div id='education' className='w-screen flex flex-col justify-start text-slate-900 pt-5 z-1'>
+        <div id='education' className='w-screen flex flex-col justify-start text-slate-900 z-1 min-h-screen h-fit'>
             <animated.div ref={headerRef} className="max-w-5xl mx-auto pt-14 mb-5" style={{ ...headerProps }}>
                 <h2 className="text-4xl font-bold border-b border-pink-500">Education</h2>
             </animated.div>

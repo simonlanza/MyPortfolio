@@ -6,6 +6,7 @@ import MobileHeader from '../components/Header/MobileHeader.jsx';
 import Experience from '../components/Experience/Experience.jsx';
 import BgBlue from '../images/white-gray-bg.jpg'
 import Education from '../components/Education/Education.jsx';
+import Contact from '../components/Contact/Contact.jsx';
 
 const Home = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 575);
@@ -37,6 +38,7 @@ const Home = () => {
                 <Experience />
                 <Education />
             </div>
+            <Contact />
         </div>
     );
 };
