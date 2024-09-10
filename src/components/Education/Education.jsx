@@ -26,17 +26,17 @@ const Education = () => {
     })
     const usalProps = useSpring({
         opacity: usalInView ? 1 : 0,
-        transform: usalInView ? 'rotateY(0deg)' : 'rotateY(180deg)',
+        transform: usalInView ? 'blur(0px)' : 'blur(10px)',
         config: { duration: 1000}
     })
     const platziProps = useSpring({
         opacity: platziInView ? 1 : 0,
-        transform: platziInView ? 'rotateY(0deg)' : 'rotateY(180deg)',
+        transform: platziInView ? 'blur(0px)' : 'blur(10px)',
         config: { duration: 1000}
     })
     const digitalProps = useSpring({
         opacity: digitalInView ? 1 : 0,
-        transform: digitalInView ? 'rotateY(0deg)' : 'rotateY(180deg)',
+        transform: digitalInView ? 'blur(0px)' : 'blur(10px)',
         config: { duration: 1000}
     })
     return (
@@ -45,19 +45,19 @@ const Education = () => {
                 <h2 className="text-4xl font-bold border-b border-pink-500">Education</h2>
             </animated.div>
             <div className='flex flex-col p-6 items-center'>
-                <animated.div className='flex flex-col items-center text-center m-2 max-w-4xl'
+                <animated.div className='flex flex-col items-center text-left m-2 max-w-4xl'
                     ref={usalRef} style={{ ...usalProps }}>
                     <h4 className='text-pink-500'>2019-2021</h4>
                     <h2 className='text-2xl m-2'>Informatic Engineering - USAL</h2>
                     <p>During my initial academic journey, I pursued Informatic Engineering at USAL, where I immersed myself in the fundamentals of technology and honed my logical thinking skills. The two years spent in this program provided a solid foundation, introducing me to the vast world of technology. While the formal education path was valuable, I eventually recognized alternative avenues better aligned with my learning style and goals.</p>
                 </animated.div>
-                <animated.div className='flex flex-col items-center text-center m-2 border-dotted border-t border-pink-500 max-w-4xl'
+                <animated.div className='flex flex-col items-center text-left m-2 border-dotted border-t border-pink-500 max-w-4xl'
                     ref={platziRef} style={{ ...platziProps }} >
                     <h4 className='text-pink-500'>from 2020</h4>
                     <h2 className='text-2xl m-2'>Platzi Online Bootcamp</h2>
                     <p>Following my departure from formal education, I embarked on a dynamic learning journey through the Platzi online platform. Engaging with a range of courses, I earned several diplomas, including Basic JavaScript, FrontEnd Development, JavaScript Fundamentals, and ReactJS. This immersive experience allowed me to refine my practical skills and stay abreast of the latest industry trends. The hands-on approach provided by Platzi complemented my learning style, empowering me to apply theoretical knowledge to real-world scenarios and reinforcing my passion for web development.</p>
                 </animated.div>
-                <animated.div className='flex flex-col items-center text-center m-2 border-dotted border-t border-pink-500 max-w-4xl'
+                <animated.div className='flex flex-col items-center text-left m-2 border-dotted border-t border-pink-500 max-w-4xl'
                     ref={digitalRef} style={{ ...digitalProps }} >
                     <h4 className='text-pink-500'>2021-2023</h4>
                     <h2 className='text-2xl m-2'>Certified Tech Developer - Digital House</h2>

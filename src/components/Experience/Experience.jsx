@@ -38,19 +38,19 @@ const Experience = () => {
 
     return (
         <div id='experience'
-            className="w-screen flex flex-col text-slate-900 z-1 min-h-screen -mt-46 overflow-hidden"
+            className="w-screen flex flex-col text-slate-900 z-1 min-w-screen -mt-46 overflow-hidden"
         >
-            <animated.div ref={headerRef} className="max-w-5xl mx-auto pt-14 mb-5" style={{ ...headerProps }}>
+            <animated.div ref={headerRef} className="max-w-5xl mx-auto pt-10 mb-3" style={{ ...headerProps }}>
                 <h2 className="text-4xl font-bold border-b border-pink-500">Experience</h2>
             </animated.div>
-            <div className='justify-center flex flex-col md:flex-row p-6 sm:pt-12 md:pt-24 lg:pt-32 	'>
-                <animated.div className='flex flex-col items-center text-center m-2 max-w-3xl'
+            <div className='justify-center items-center flex flex-col p-6 sm:pt-12 md:pt-24 lg:pt-32'>
+                <animated.div className='flex flex-col items-center text-left w-[80%]'
                     ref={lJobRef} style={{ ...lJobProps }} >
                     <h4 className='text-pink-500'>2020-2022</h4>
                     <h2 className='text-2xl m-2'> Freelance Web Developer </h2>
                     <p>From 2020 to 2022, I served as a Freelance Web Developer, specializing in creating and enhancing websites. Focused on small to medium-sized enterprises and startups, I applied a meticulous approach to deliver seamless, professional online solutions. This experience honed my technical skills and deepened my understanding of crafting effective web solutions tailored to diverse client needs.</p>
                 </animated.div>
-                <animated.div className='flex flex-col items-center text-center border-dotted border-t border-pink-500 md:border-none m-2 max-w-3xl'
+                <animated.div className='flex flex-col items-center text-left border-dotted border-t border-pink-500 md:border-none m-2 w-[80%]'
                     ref={rJobRef} style={{ ...rJobProps }} >
                     <h4 className='text-pink-500'>2023</h4>
                     <h2 className='text-2xl m-2'> Sr App Support Engineer at <a className='text-indigo-600 hover:scale-120 transition-transform' href='https://dxc.com/us/en' target="_blank" rel="noopener noreferrer"> DXC</a></h2>

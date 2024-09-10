@@ -94,6 +94,12 @@ const About = () => {
             title: 'Dynamic',
             description: 'Embracing fluidity, where elements come to life.',
         },
+/*         {
+            icon: <RocketLaunchIcon sx={{ fontSize: 69 }} />,
+            mobileIcon: <RocketLaunchIcon sx={{ fontSize: 42 }} />,
+            title: 'Dynamic',
+            description: 'Embracing fluidity, where elements come to life.',
+        }, */
 
     ];
 
